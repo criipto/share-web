@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Criipto - Secure and Compliant Customer Identification</title>
+    <meta name="description" content="Privacy for the individual. Compliance for the orgnisation. Lovable, user friendly app for managing personal identity documentation, including management of access as required by EU GDRP.">
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+
+    <script src="./assets/js/vendor/jquery.slim.min.js" defer></script>
+    <script src="./assets/js/vendor/tether.min.js" defer></script>
+    <script src="./assets/js/vendor/bootstrap.min.js" defer></script>
+    <script src="./assets/js/scripts.js" defer></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#2d3e50">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-brand">Criipto</h1>
+    </header>
+
+    <main class="page">
+
+        <section id="request" class="block">
+            <h3>Hej Anna, du har en anmodning</h3>
+            <div class="area">
+                <figure class="bank">
+                    <img src="./assets/img/bank/starbank.svg" width="39" height="39" alt="StarBank">
+                    <figcaption class="body">StarBank</figcaption>
+                </figure>
+                <p class="date body-small"><time datetime="2017-11-12">12. november 2017</time></p>
+            </div>
+            <ul class="list-icons body">
+                <li>Kørekort/pas</li>
+                <li>Sygesikringbevis</li>
+            </ul>
+            <div class="bottom-nav">
+                <a href="#login" class="btn btn-primary js-overlay">Log ind med NemID</a>
+                <a href="./confirmation.html" class="btn">Jeg har ikke NemID</a>
+            </div>
+        </section>
+
+        <section id="login" class="block overlay overlay-hidden">
+            <div class="top-nav">
+                <a href="#request" class="back js-overlay-close"></a>
+                <span class="title">Log ind</span>
+                <a href="#" class="icon icon-help"></a>
+            </div>
+            <img src="./assets/img/nemid-login.png" width="280" height="319" alt="">
+        </section>
+
+    </main>
+
+    <nav class="navbar fixed-top">
+        <span class="navbar-brand"><img src="./assets/img/logo.svg" alt="criipto"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+</body>
+</html>

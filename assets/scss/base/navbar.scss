@@ -1,0 +1,80 @@
+/* === NAVBAR ======================================================== */
+.navbar {
+  height: 3rem;
+  padding: .25rem 15px;
+
+  &.fixed-top {
+    z-index: 100;
+  }
+
+  &-brand {
+    max-width: 120px;
+    padding: 11px 10px 7px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: .25rem;
+    right: 1rem;
+    bottom: .25rem;
+    left: 1rem;
+    z-index: 1;
+    font-size: inherit;
+    text-align: center;
+    user-select: none;
+
+    img {
+      width: 89px;
+      height: 22px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  &-toggler {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    display: block;
+    position: absolute;
+    top: .25rem;
+    left: .4375rem;
+    bottom: .25rem;
+    z-index: 5;
+    font-size: inherit;
+    line-height: inherit;
+    background: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &-icon {
+      width: 21px;
+      height: 13px;
+      border-top: 1px solid $color-palette-1;
+      border-bottom: 1px solid $color-palette-1;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: none;
+
+      &:before {
+        @include pseudo;
+        height: 1px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $color-palette-1;
+      }
+    }
+  }
+}

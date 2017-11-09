@@ -1,0 +1,51 @@
+/* === TYPOGRAPHY ======================================================== */
+body {
+  font-family: $font-default;
+  font-weight: 300;
+  line-height: 1.375;
+  color: $color-palette-1;
+}
+
+/* Link */
+a {
+  color: $color-palette-1;
+  text-decoration: underline;
+  &:hover, &:focus { text-decoration: none; }
+}
+
+/* Headings */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1.5rem;
+  font-weight: normal;
+  line-height: inherit;
+}
+.h1, h1 { line-height: 1.175; }
+.h2, h2 { line-height: 1.15625; }
+.h3, h3 { line-height: 1.17857143; font-weight: 300; }
+.h4, h4 { line-height: 1.20833334; font-weight: bold; }
+.h5, h5 { font-size: 1.25rem; line-height: 1.2; font-weight: bold; }
+
+/* Custom classes */
+.hero {
+  font-size: 3.25rem;
+  font-weight: normal;
+  line-height: .8524591;
+}
+
+.body {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.3333334;
+
+  &-small {
+    font-size: .8125rem;
+    font-weight: 300;
+    line-height: 1.153846154;
+  }
+}
+
+.paragraph {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.375;
+}

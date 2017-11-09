@@ -1,0 +1,84 @@
+// ==========================================================================
+// VARIABLES
+// ========================================================================== */
+//Widths
+$min-width: 320px;
+
+// Media Breakpoints
+$w-mobile-xxs: 320px; //iPhone 5
+$w-mobile-xs: 375px; //iPhone 7
+$w-mobile-sm: 414px; //iPhone 7 Plus
+$w-mobile-md: 568px; //iPhone 5 Landscape
+$w-mobile-lg: 667px; //iPhone 7 Landscape
+$w-mobile-xl: 736px; //iPhone 7 Landscape
+$w-tablet-sm: 750px; //Tablets and iPad
+$w-tablet-md: 992px; //Tablets Landscape
+$w-tablet-lg: 1024px; //iPad Landscape
+$w-desktop-sm: 1200px;
+$w-desktop-md: 1280px;
+$w-desktop-lg: 1366px;
+$w-desktop-xl: 1440px;
+
+// Media Queries
+$mobile-xxs: '(min-width: #{$w-mobile-xxs})';
+$mobile-xxs-up: '(min-width: #{$w-mobile-xxs}) and (max-width: 749px)';
+$mobile-tablet-up: '(min-width: #{$w-mobile-xxs}) and (max-width: 1199px)';
+$mobile-xs: '(min-width: #{$w-mobile-xs})';
+$mobile-xs-up: '(min-width: #{$w-mobile-xs}) and (max-width: 749px)';
+$mobile-sm: '(min-width: #{$w-mobile-sm})';
+$mobile-md: '(min-width: #{$w-mobile-md})';
+$mobile-lg: '(min-width: #{$w-mobile-lg})';
+$mobile-lg-up: '(min-width: #{$w-mobile-lg}) and (max-width: 749px)';
+$mobile-xl: '(min-width: #{$w-mobile-xl})';
+$tablet-sm: '(min-width: #{$w-tablet-sm})';
+$tablet-sm-up: '(min-width: #{$w-tablet-sm}) and (max-width: 1279px)';
+$tablet-md: '(min-width: #{$w-tablet-md})';
+$tablet-lg: '(min-width: #{$w-tablet-lg})';
+$desktop-sm: '(min-width: #{$w-desktop-sm})';
+$desktop-md: '(min-width: #{$w-desktop-md})';
+$desktop-lg: '(min-width: #{$w-desktop-lg})';
+$desktop-xl: '(min-width: #{$w-desktop-xl})';
+$portrait: '(orientation: portrait)';
+$landscape: '(orientation: landscape)';
+$mobile: '(max-width: #{$w-mobile-xl})';
+$mobile-landscape: '(max-width: #{$w-mobile-xl}) and (orientation: landscape)';
+
+// Fonts
+$font-default: 'Raleway', sans-serif;
+
+// Base colors
+$color-white: white;
+$color-black: black;
+
+// Primary colors
+$color-palette-1: #2d3e50;
+$color-palette-2: #f6e9e8;
+
+// Secondary colors
+$color-palette-3: #ff4d67;
+$color-palette-4: #30b7fc;
+$color-palette-5: #00a9ff;
+$color-palette-6: #2f86b8;
+$color-palette-7: #ccc;
+$color-palette-8: #e2d7d8;
+
+// Error/success colors
+$color-palette-high: #02baa2;
+$color-palette-medium: #e8d100;
+$color-palette-low: #e90022;
+
+// Transition Settings
+$easing: ease;
+$easing-in: cubic-bezier(.645, .045, .355, 1);
+$easing-out: cubic-bezier(.355, .045, .645, 1);
+$lasting-s: .1s;
+$lasting: .2s;
+$lasting-l: .4s;
+$duration-s: $lasting-s $easing;
+$duration: $lasting $easing;
+$duration-l: $lasting-l $easing;
+
+// Paths
+$images: '../img';
+$svg: '../svg';
+$fonts: '../fonts';

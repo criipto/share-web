@@ -1,0 +1,42 @@
+/* === BTN ======================================================== */
+.btn {
+  min-width: 260px;
+  padding: .875rem .75rem .75rem;
+  border-color: $color-palette-1;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: .035em;
+  text-decoration: none;
+  background: none;
+  transition: color $duration, border-color $duration, background-color $duration;
+  backface-visibility: hidden;
+  cursor: pointer;
+
+  &:hover, &:focus, &:active {
+    color: $color-white;
+    box-shadow: none;
+    outline: none;
+  }
+  &:hover, &:focus {
+    border-color: $color-palette-4;
+    background-color: $color-palette-4;
+  }
+  &:active {
+    border-color: $color-palette-6;
+    background-color: $color-palette-6;
+  }
+  &.disabled, &:disabled {
+    border-color: $color-palette-7;
+    color: $color-white;
+    background-color: $color-palette-7;
+    opacity: 1;
+  }
+
+  &-primary {
+    color: $color-white;
+    border-color: $color-palette-1;
+    background-color: $color-palette-1;
+  }
+}

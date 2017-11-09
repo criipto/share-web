@@ -1,0 +1,43 @@
+// ==========================================================================
+// MIXINS
+// ========================================================================== */
+// PSEUDO
+@mixin pseudo {
+  content: '';
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+// CLEARFIX
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+// SMOOTH
+@mixin smooth {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-backface-visibility: hidden;
+}
+// SMOOTH
+@mixin notsmooth {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+}
+// FIRST & LAST
+@mixin firstlast {
+  > *:first-child {
+    &, > *:first-child { margin-top: 0; }
+  }
+  > *:last-child {
+    &, > *:last-child { margin-bottom: 0; }
+  }
+}
+@mixin hiddentext {
+  font-size: 10px;
+  position: absolute;
+  left: -9999px;
+  cursor: default;
+  user-select: none;
+}

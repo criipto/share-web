@@ -1,0 +1,35 @@
+/* === BOTTOM NAV ======================================================== */
+.bottom-nav {
+  min-height: 5rem;
+  padding: 1rem 15px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  background: rgba($color-palette-8, .5) linear-gradient(rgba($color-palette-8, 0) 0%, rgba($color-palette-8, 1) 50%, rgba($color-palette-8, 1) 100%);
+  transform: translate3d(0, 0, 0);
+  transition: transform $duration;
+  @media #{$mobile-md} {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 280px;
+    margin: 0 auto;
+    display: block;
+    @media #{$mobile-md} {
+      width: 260px;
+      margin: 0 5px;
+    }
+
+    & + .btn {
+      margin-top: .5rem;
+      @media #{$mobile-md} { margin-top: 0; }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+/* === block ======================================================== */
+.block {
+  text-align: center;
+  &:after { @include clearfix; }
+
+  &[data-bottom='136'] {
+    padding-bottom: 9rem;
+  }
+  &.overlay {
+    padding: 4.25rem 15px 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1050;
+    opacity: 1;
+    background-color: $color-palette-2;
+    transition: opacity $duration-l;
+
+    &-transparent {
+      opacity: 0;
+    }
+    &-hidden {
+      display: none;
+    }
+    &-animated {
+      opacity: 1;
+    }
+  }
+  &-hidden {
+  }
+
+  &-next-in {
+    padding-top: 3.5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(100vw, 0, 0);
+  }
+  &-next-out {
+    padding-top: 3.5rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(-100vw, 0, 0);
+  }
+
+  .area {
+    margin-bottom: 1.5rem;
+  }
+
+  .date {
+    line-height: 1.384615385;
+  }
+}
