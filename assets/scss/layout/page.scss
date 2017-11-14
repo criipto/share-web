@@ -1,10 +1,7 @@
 /* === PAGE ================================================================== */
 .page {
   min-height: 100%;
-  padding: 3.5rem 15px 1rem;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
+  padding: 3.5rem 20px 1rem;
 
   &[data-bottom='80'] { padding-bottom: 6rem; }
   &[data-bottom='136'] { padding-bottom: 9rem; }

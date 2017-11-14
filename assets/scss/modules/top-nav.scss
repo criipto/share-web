@@ -1,7 +1,7 @@
 /* === TOP NAV ======================================================== */
 .top-nav {
   height: 3rem;
-  padding: .25rem 15px;
+  padding: .25rem 1.25rem;
   position: fixed;
   top: 0;
   right: 0;
@@ -20,6 +20,7 @@
     background: linear-gradient($color-palette-2 0%, $color-palette-2 50%, rgba($color-palette-2, .1) 100%);
   }
 
+  // Back link
   .back {
     width: 40px;
     height: 40px;
@@ -49,6 +50,44 @@
     }
     &:after {
       top: 7px;
+      transform: rotate(45deg);
+    }
+  }
+
+  // Close link
+  .close {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    top: .25rem;
+    right: .5rem;
+    z-index: 5;
+    float: none;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-shadow: none;
+    opacity: 1;
+
+    &:before, &:after {
+      @include pseudo;
+      width: 23px;
+      height: 1px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: rotate(-45deg);
+      background: $color-palette-1;
+      backface-visibility: hidden;
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
       transform: rotate(45deg);
     }
   }

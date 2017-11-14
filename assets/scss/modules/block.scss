@@ -1,16 +1,35 @@
-/* === block ======================================================== */
+/* === BLOCK ======================================================== */
 .block {
   text-align: center;
   &:after { @include clearfix; }
+  @media #{$tablet-sm} {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
   &.overlay {
-    padding: 4rem 15px 0;
-    margin: -3.5rem -15px 0;
+    padding: 4rem 1.25rem 0;
+    margin: -3.5rem -1.25rem 0;
     position: relative;
     z-index: 1050;
     opacity: 1;
     background-color: $color-palette-2;
     transition: opacity $duration-l;
+    @media #{$tablet-sm} {
+      margin-right: auto;
+      margin-left: auto;
+      &:before {
+        @include pseudo;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color-palette-2;
+      }
+    }
 
     &-transparent {
       opacity: 0;
@@ -22,6 +41,7 @@
       opacity: 1;
     }
     &-fixed {
+      max-width: none;
       padding-bottom: 1rem;
       margin: 0;
       position: fixed;
@@ -33,30 +53,5 @@
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
     }
-  }
-
-  &-next-in {
-    padding-top: 3.5rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(100vw, 0, 0);
-  }
-  &-next-out {
-    padding-top: 3.5rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(-100vw, 0, 0);
-  }
-
-  .area {
-    margin-bottom: 1.5rem;
-  }
-
-  .date {
-    line-height: 1.384615385;
   }
 }
