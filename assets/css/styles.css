@@ -104,7 +104,7 @@ a {
 
 /* === BTN ======================================================== */
 .btn {
-  min-width: 260px;
+  min-width: 160px;
   padding: .875rem .75rem .75rem;
   border-color: #2d3e50;
   border-radius: 1.5rem;
@@ -137,6 +137,9 @@ a {
     color: white;
     border-color: #2d3e50;
     background-color: #2d3e50; }
+  .btn-sm {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem; }
 
 /* === NAVBAR ======================================================== */
 .navbar {
@@ -239,9 +242,9 @@ a {
 /* === PAGE ================================================================== */
 .page {
   min-height: 100%;
-  padding: 3.5rem 15px 5.5rem; }
-  .page[data-bottom='0'] {
-    padding-bottom: .5rem; }
+  padding: 3.5rem 15px 1rem; }
+  .page[data-bottom='80'] {
+    padding-bottom: 6rem; }
   .page[data-bottom='136'] {
     padding-bottom: 9rem; }
   .page:before {
@@ -282,18 +285,10 @@ a {
     content: '';
     display: table;
     clear: both; }
-  .block[data-bottom='136'] {
-    padding-bottom: 9rem; }
   .block.overlay {
-    padding: 4.25rem 15px 1rem;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    padding: 4rem 15px 0;
+    margin: -3.5rem -15px 0;
+    position: relative;
     z-index: 1050;
     opacity: 1;
     background-color: #f6e9e8;
@@ -304,6 +299,17 @@ a {
       display: none; }
     .block.overlay-animated {
       opacity: 1; }
+    .block.overlay-fixed {
+      padding-bottom: 1rem;
+      margin: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch; }
   .block-next-in {
     padding-top: 3.5rem;
     display: block;
@@ -474,7 +480,8 @@ a {
   .bank figcaption {
     margin-top: .555556rem; }
 
-/* === ICON FACE ======================================================== */
+/* === ICONS ======================================================== */
+/* Icon face */
 .icon-face {
   width: 100px;
   height: 100px;
@@ -515,16 +522,32 @@ a {
       opacity: 0;
       transition: all 0.9s cubic-bezier(0.355, 0.045, 0.645, 1), opacity 0.1s 0.82s ease; }
 
-/* === CHOOSE ONE ======================================================== */
-.choose-one {
-  padding-top: .5rem; }
-  .choose-one .or {
-    padding: .375rem 0;
-    display: block; }
-  .choose-one .btn {
-    width: 280px;
+/* === CHOOSE ======================================================== */
+.choose .or {
+  padding: .375rem 0;
+  display: block; }
+.choose .btn {
+  width: 280px;
+  margin: 0 auto;
+  display: block; }
+
+/* === INSTRUCTIONS ======================================================== */
+.instructions .heading {
+  margin-bottom: 1rem; }
+.instructions .paragraph {
+  line-height: 1.1875rem; }
+.instructions .picture {
+  margin: 1.5rem 0 0;
+  display: block; }
+  .instructions .picture img {
     margin: 0 auto;
     display: block; }
+
+/* === SUCCESS ======================================================== */
+.success {
+  margin-top: -1.5rem; }
+  .success .icon-check {
+    margin: 0 auto .75rem; }
 
 /* === MEDIA QUERIES ========================================================= */
 

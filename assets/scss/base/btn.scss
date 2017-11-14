@@ -1,6 +1,6 @@
 /* === BTN ======================================================== */
 .btn {
-  min-width: 260px;
+  min-width: 160px;
   padding: .875rem .75rem .75rem;
   border-color: $color-palette-1;
   border-radius: 1.5rem;
@@ -38,5 +38,10 @@
     color: $color-white;
     border-color: $color-palette-1;
     background-color: $color-palette-1;
+  }
+
+  &-sm {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
   }
 }

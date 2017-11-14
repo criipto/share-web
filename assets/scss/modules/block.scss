@@ -3,19 +3,10 @@
   text-align: center;
   &:after { @include clearfix; }
 
-  &[data-bottom='136'] {
-    padding-bottom: 9rem;
-  }
   &.overlay {
-    padding: 4.25rem 15px 1rem;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    padding: 4rem 15px 0;
+    margin: -3.5rem -15px 0;
+    position: relative;
     z-index: 1050;
     opacity: 1;
     background-color: $color-palette-2;
@@ -30,8 +21,18 @@
     &-animated {
       opacity: 1;
     }
-  }
-  &-hidden {
+    &-fixed {
+      padding-bottom: 1rem;
+      margin: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 
   &-next-in {

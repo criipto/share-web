@@ -1,17 +1,13 @@
 /* === PAGE ================================================================== */
 .page {
   min-height: 100%;
-  padding: 3.5rem 15px 5.5rem;
+  padding: 3.5rem 15px 1rem;
   //display: flex;
   //justify-content: center;
   //align-items: center;
 
-  &[data-bottom='0'] {
-    padding-bottom: .5rem;
-  }
-  &[data-bottom='136'] {
-    padding-bottom: 9rem;
-  }
+  &[data-bottom='80'] { padding-bottom: 6rem; }
+  &[data-bottom='136'] { padding-bottom: 9rem; }
 
   &:before {
     @include pseudo;
