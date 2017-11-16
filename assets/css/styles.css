@@ -140,6 +140,50 @@ a {
   .btn-sm {
     padding-top: .3125rem;
     padding-bottom: .3125rem; }
+  .btn-next {
+    position: relative; }
+    .btn-next:before, .btn-next:after {
+      content: '';
+      display: block;
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 11px;
+      height: 1px;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 13px;
+      bottom: 0;
+      background: #2d3e50; }
+    .btn-next:before {
+      top: -7px;
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .btn-next:after {
+      top: 7px;
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .btn-check {
+    position: relative; }
+    .btn-check:before {
+      content: '';
+      display: block;
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 1.375rem;
+      height: 1.375rem;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: .625rem;
+      bottom: 0;
+      background: url("../img/icon/success.svg") no-repeat center center; }
+  .btn-primary.btn-next:before, .btn-primary.btn-next:after {
+    background: white; }
   .btn-wide {
     width: 280px; }
 
@@ -607,6 +651,29 @@ a {
   margin-top: -1.5rem; }
   .success .icon-check {
     margin: 0 auto .75rem; }
+
+/* === CRYPT ======================================================== */
+.crypt {
+  margin-bottom: 1.6875rem; }
+  .crypt .heading {
+    margin-bottom: 2rem; }
+  .crypt .btn {
+    min-width: 135px;
+    padding: .375rem 39px;
+    font-size: 15px;
+    letter-spacing: 0; }
+    .crypt .btn + div {
+      margin-top: .5rem; }
+  .crypt + .area .bank {
+    margin-bottom: 0; }
+    .crypt + .area .bank figcaption {
+      margin-top: .625rem; }
+  .crypt + .area .mail {
+    margin-top: 0;
+    margin-bottom: 0; }
+    .crypt + .area .mail a {
+      color: inherit;
+      text-decoration: none; }
 
 /* === MEDIA QUERIES ========================================================= */
 

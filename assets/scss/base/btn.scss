@@ -45,6 +45,54 @@
     padding-bottom: .3125rem;
   }
 
+  &-next {
+    position: relative;
+    &:before, &:after {
+      @include pseudo;
+      width: 11px;
+      height: 1px;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 13px;
+      bottom: 0;
+      background: $color-palette-1;
+    }
+    &:before {
+      top: -7px;
+      transform: rotate(45deg);
+    }
+    &:after {
+      top: 7px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &-check {
+    position: relative;
+    &:before {
+      @include pseudo;
+      width: 1.375rem;
+      height: 1.375rem;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: .625rem;
+      bottom: 0;
+      background: url('#{$images}/icon/success.svg') no-repeat center center;
+    }
+  }
+
+  &-primary {
+    &.btn-next {
+      &:before, &:after {
+        background: $color-white;
+      }
+    }
+  }
+
   &-wide {
     width: 280px;
   }

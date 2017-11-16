@@ -1,0 +1,34 @@
+/* === CRYPT ======================================================== */
+.crypt {
+  margin-bottom: 1.6875rem;
+
+  .heading {
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    min-width: 135px;
+    padding: .375rem 39px;
+    font-size: 15px;
+    letter-spacing: 0;
+    & + div {
+      margin-top: .5rem;
+    }
+  }
+
+  & + .area {
+    .bank {
+      margin-bottom: 0;
+      figcaption { margin-top: .625rem; }
+    }
+    .mail {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+}
