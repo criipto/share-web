@@ -654,9 +654,38 @@ a {
 
 /* === CRYPT ======================================================== */
 .crypt {
+  margin-top: -1.5rem;
   margin-bottom: 1.6875rem; }
   .crypt .heading {
     margin-bottom: 2rem; }
+  .crypt .part {
+    margin-top: -1.875rem;
+    margin-bottom: 1.125rem;
+    font-size: 1.125rem;
+    line-height: 1.444444445; }
+  .crypt .loader {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: block;
+    position: relative; }
+    .crypt .loader:before {
+      content: '';
+      display: block;
+      overflow: hidden;
+      box-sizing: border-box;
+      width: 30px;
+      height: 30px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url("../img/loader.png") no-repeat center center;
+      background-size: contain;
+      -webkit-animation: spin 1s infinite linear;
+              animation: spin 1s infinite linear; }
   .crypt .btn {
     min-width: 135px;
     padding: .375rem 39px;
@@ -675,6 +704,21 @@ a {
       color: inherit;
       text-decoration: none; }
 
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
 /* === MEDIA QUERIES ========================================================= */
 
 @media (min-width: 375px){

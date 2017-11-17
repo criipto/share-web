@@ -1,9 +1,40 @@
 /* === CRYPT ======================================================== */
 .crypt {
+  margin-top: -1.5rem;
   margin-bottom: 1.6875rem;
 
   .heading {
     margin-bottom: 2rem;
+  }
+
+  .part {
+    margin-top: -1.875rem;
+    margin-bottom: 1.125rem;
+    font-size: 1.125rem;
+    line-height: 1.444444445;
+  }
+
+  .loader {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    display: block;
+    position: relative;
+
+    &:before {
+      @include pseudo;
+      width: 30px;
+      height: 30px;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url('#{$images}/loader.png') no-repeat center center;
+      background-size: contain;
+      animation: spin 1s infinite linear;
+    }
   }
 
   .btn {
@@ -31,4 +62,8 @@
       }
     }
   }
+}
+@keyframes spin {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
 }
