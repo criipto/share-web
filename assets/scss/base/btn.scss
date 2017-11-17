@@ -69,6 +69,25 @@
     }
   }
 
+  &-cross {
+    position: relative;
+    &:before, &:after {
+      @include pseudo;
+      width: 17px;
+      height: 1px;
+      margin: auto;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 14px;
+      bottom: 0;
+      opacity: .9;
+      background: $color-palette-1;
+    }
+    &:before { transform: rotate(45deg); }
+    &:after { transform: rotate(-45deg); }
+  }
+
   &-check {
     position: relative;
     &:before {
@@ -86,7 +105,7 @@
   }
 
   &-primary {
-    &.btn-next {
+    &.btn-next, &.btn-cross {
       &:before, &:after {
         background: $color-white;
       }

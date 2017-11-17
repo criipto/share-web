@@ -47,20 +47,11 @@
     }
   }
 
-  & + .area {
-    .bank {
-      margin-bottom: 0;
-      figcaption { margin-top: .625rem; }
-    }
-    .mail {
-      margin-top: 0;
-      margin-bottom: 0;
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-    }
+  .picture {
+    width: 280px;
+    height: 350px;
+    margin: 20px auto 0;
+    display: block;
   }
 }
 @keyframes spin {
